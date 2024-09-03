@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.left-area {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+.right-area {
+  flex: 2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
