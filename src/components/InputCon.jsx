@@ -79,7 +79,7 @@ const InputCon = () => {
         />
         {error && <p className="errorMsg">{error}</p>}
 
-        <button type="submit">저장</button>
+        <button className="submitBtn" type="submit">저장</button>
       </form>
     </div>
   );

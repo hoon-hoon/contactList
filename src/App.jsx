@@ -1,5 +1,6 @@
 import "./App.css";
 import InputCon from "./components/InputCon";
+import ListCon from "./components/ListCon";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
           <InputCon />
         </div>
         <div className="right-area">
-          <p>오른쪽 영역.</p>
+          <ListCon />
         </div>
       </div>
     </div>

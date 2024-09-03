@@ -1,0 +1,64 @@
+.list-con {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.list-item {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-item h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.list-item p {
+  margin: 3px 1px;
+  color: #666;
+  font-size: 14px;
+}
+
+.list-item p span {
+  font-weight: 500;
+  color: #333;
+}
+
+.list-item-content {
+  flex-grow: 1;
+}
+
+.list-item-btnWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.list-item-btnWrap button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  color: white;
+  background-color: #0077f5;
+}
+.list-item-btnWrap button:hover {
+  background-color: #0164ce;
+}
