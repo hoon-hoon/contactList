@@ -26,10 +26,15 @@
 
 .left-area {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputSection {
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 20px;
-  box-sizing: border-box;
   background-color: whitesmoke;
 }
 
@@ -40,4 +45,6 @@
   padding: 20px;
   box-sizing: border-box;
   background-color: whitesmoke;
+  height: 100%;
+  overflow-y: auto;
 }

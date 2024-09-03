@@ -1,0 +1,42 @@
+.modalWrap {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.modalWrap h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.modalWrap bold {
+  font-weight: 600;
+}
+
+.modalWrap p {
+  margin: 0;
+  text-align: left;
+}
+
+.modalWrap button {
+  margin: 5px;
+  padding: 12px 20px;
+  background-color: #0077f5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+  align-self: center;
+}
+
+.modalWrap button:hover {
+  background-color: #0164ce;
+}
