@@ -1,0 +1,66 @@
+.modal-content {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-content h3 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.modal-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.modal-content .deleteBtn {
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.modal-content input {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.modal-content .addBtn,
+.modal-content .closeBtn {
+  padding: 8px 12px;
+  background-color: #0077f5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.modal-content .addBtn:hover,
+.modal-content .closeBtn:hover {
+  background-color: #0056b3;
+}

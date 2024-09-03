@@ -2,7 +2,7 @@ import { useState } from "react";
 import InputEl from "./InputEl";
 import SelectEl from "./SelectEl";
 
-const InputCon = () => {
+const InputCon = ({ onOpenGroupModal, groups }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [group, setGroup] = useState("가족");
@@ -63,13 +63,23 @@ const InputCon = () => {
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
         />
-        <SelectEl
-          label="그룹"
-          name="group"
-          options={["가족", "친구", "직장", "스터디"]}
-          value={group}
-          onChange={(e) => setGroup(e.target.value)}
-        />
+        <div className="selectWrap">
+          <SelectEl
+            label="그룹"
+            name="group"
+            options={groups} // 상위 컴포넌트인 App.jsx에서 받은 groups를 전달
+            value={group}
+            onChange={(e) => setGroup(e.target.value)}
+          />
+          <button
+            type="button"
+            onClick={onOpenGroupModal}
+            className="groupManageBtn"
+          >
+            그룹관리
+          </button>
+        </div>
+
         <InputEl
           label="간단한 기록"
           type="text"
@@ -79,7 +89,9 @@ const InputCon = () => {
         />
         {error && <p className="errorMsg">{error}</p>}
 
-        <button className="submitBtn" type="submit">저장</button>
+        <button className="submitBtn" type="submit">
+          저장
+        </button>
       </form>
     </div>
   );
